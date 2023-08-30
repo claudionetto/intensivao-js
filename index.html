@@ -1,18 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Document</title>
-</head>
-<body>
-    <header></header>
-    <main>
-      <section id="container-produto">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+  <body class="bg-stone-200 flex flex-col">
+    <section
+      id="carrinho"
+      class="fixed z-50 top-0 right-[-360px] bg-slate-900 h-screen w-[360px] text-white"
+    >
+      <div id="cabecalho-carrinho" class="flex justify-between m-4">
+        <p>Meu Carrinho</p>
+        <i id="fechar-carrinho" class="fa-solid fa-circle-xmark"></i>
+      </div>
+      <section id="produtos-carrinho">
+        <p>Camisas</p>
+        <p>Camisas</p>
+        <p>Camisas</p>
       </section>
+      <p id="preco-total">$200</p>
+      <button class="bg-slate-200 text-slate-900 p-1">Finalizar Compra</button>
+    </section>
+    <header class="flex bg-slate-900 shadow-xl shadow-slate-400 px-8 py-4 justify-between sticky top-0">
+      <img
+        class="h-16"
+        src="assets/logo/hashtag.svg"
+        alt="Logo Magazine Hashtag"
+      />
+      <div class="text-xl text-slate-200 flex gap-6 mr-4 items-end">
+        <button id="abrir-carrinho">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </button>
+        <button><i class="fa-solid fa-user"></i></button>
+      </div>
+    </header>
+    <main>
+      <section class="flex flex-wrap p-10 justify-center gap-10" id="container-produto"></section>
     </main>
 
-    <script src="./main.js"></script>
-</body>
+    <script type="module" src="./main.js"></script>
+  </body>
 </html>
