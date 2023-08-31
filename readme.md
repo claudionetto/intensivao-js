@@ -1,1 +1,1 @@
-Instensivão JavaScript
+Instensivão JavaScript Hashtag Programação
