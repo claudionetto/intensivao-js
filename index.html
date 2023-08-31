@@ -16,21 +16,22 @@
   <body class="bg-stone-200 flex flex-col">
     <section
       id="carrinho"
-      class="fixed z-50 top-0 right-[-360px] bg-slate-900 h-screen w-[360px] text-white"
+      class="fixed z-50 top-0 right-[-360px] bg-slate-900 h-screen w-[360px] text-white duration-200 border-l border-slate-200 p-5 flex flex-col justify-between"
     >
       <div id="cabecalho-carrinho" class="flex justify-between m-4">
         <p>Meu Carrinho</p>
-        <i id="fechar-carrinho" class="fa-solid fa-circle-xmark"></i>
+        <button id="fechar-carrinho">
+          <i class="fa-solid fa-circle-xmark"></i>
+        </button>
       </div>
       <section id="produtos-carrinho">
-        <p>Camisas</p>
-        <p>Camisas</p>
-        <p>Camisas</p>
       </section>
       <p id="preco-total">$200</p>
       <button class="bg-slate-200 text-slate-900 p-1">Finalizar Compra</button>
     </section>
-    <header class="flex bg-slate-900 shadow-xl shadow-slate-400 px-8 py-4 justify-between sticky top-0">
+    <header
+      class="flex bg-slate-900 shadow-xl shadow-slate-400 px-8 py-4 justify-between sticky top-0 z-10"
+    >
       <img
         class="h-16"
         src="assets/logo/hashtag.svg"
@@ -44,7 +45,10 @@
       </div>
     </header>
     <main>
-      <section class="flex flex-wrap p-10 justify-center gap-10" id="container-produto"></section>
+      <section
+        class="flex flex-wrap p-10 justify-center gap-10"
+        id="container-produto"
+      ></section>
     </main>
 
     <script type="module" src="./main.js"></script>
