@@ -3,7 +3,7 @@ import { adicionarAoCarrinho } from "./menuCarrinho";
 
 export function renderizarCatalogo(){
     for (const produtoCatalogo of catalogo) {
-        const cardProduto = `<div class="border-solid w-48 m-2 flex flex-col p-2 justify-between shadow-xl shadow-slate-400 rounded-lg group" id="card-produto-${produtoCatalogo.id}">
+        const cardProduto = `<div class="border-solid w-48 m-2 flex flex-col p-2 justify-between shadow-xl shadow-slate-400 rounded-lg group ${produtoCatalogo.feminino ? "feminino" : "masculino"}" id="card-produto-${produtoCatalogo.id}">
         <img src="./assets/img/${produtoCatalogo.imagem}" alt=Imagem
         class= "group-hover:scale-110 duration-300 my-3 rounded-lg"
         >
